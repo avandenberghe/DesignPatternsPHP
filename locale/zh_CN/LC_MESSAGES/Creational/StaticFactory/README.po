@@ -1,15 +1,15 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: DesignPatternsPHP 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-29 12:18+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-07 17:50+0800\n"
+"Last-Translator: Aspirant Zhang <admin@aspirantzhang.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 
 #: ../../Creational/StaticFactory/README.rst:2
 msgid "Static Factory"
@@ -27,20 +27,9 @@ msgid ""
 "method to create all types of objects it can create. It is usually named "
 "``factory`` or ``build``."
 msgstr ""
-"和抽象工厂类似，静态工厂模式用来创建一系列互相关联或依赖的对象，和抽象工厂模式不同的是静态工厂"
-"模式只用一个静态方法就解决了所有类型的对象创建，通常被命名为``工厂`` 或者 ``构建器``"
-
-#: ../../Creational/StaticFactory/README.rst:14
-msgid "Examples"
-msgstr "例子"
-
-#: ../../Creational/StaticFactory/README.rst:16
-msgid ""
-"Zend Framework: ``Zend_Cache_Backend`` or ``_Frontend`` use a factory method"
-" create cache backends or frontends"
-msgstr ""
-"Zend Framework 框架中的: ``Zend_Cache_Backend`` 和 ``_Frontend`` 使用了静态工厂设计模式"
-" 创建后端缓存或者前端缓存对象"
+"与 抽象工厂 类似，静态工厂模式用于创建一系列互相关联或依赖的对象。"
+"它与抽象工厂模式的区别在于，静态工厂模式仅使用 一个静态方法 来创建所有它可以创建的类型。"
+"通常，这个静态方法被命名为：``factory`` 或 ``build``。"
 
 #: ../../Creational/StaticFactory/README.rst:20
 msgid "UML Diagram"
@@ -51,29 +40,9 @@ msgid "Code"
 msgstr "代码"
 
 #: ../../Creational/StaticFactory/README.rst:29
-msgid "You can also find these code on `GitHub`_"
+msgid "You can also find this code on `GitHub`_"
 msgstr "你可以在 `GitHub`_ 上找到这些代码"
-
-#: ../../Creational/StaticFactory/README.rst:31
-msgid "StaticFactory.php"
-msgstr ""
-
-#: ../../Creational/StaticFactory/README.rst:37
-msgid "FormatterInterface.php"
-msgstr ""
-
-#: ../../Creational/StaticFactory/README.rst:43
-msgid "FormatString.php"
-msgstr ""
-
-#: ../../Creational/StaticFactory/README.rst:49
-msgid "FormatNumber.php"
-msgstr ""
 
 #: ../../Creational/StaticFactory/README.rst:56
 msgid "Test"
 msgstr "测试"
-
-#: ../../Creational/StaticFactory/README.rst:58
-msgid "Tests/StaticFactoryTest.php"
-msgstr ""

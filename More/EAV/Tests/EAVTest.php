@@ -1,14 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\EAV\Tests;
 
 use DesignPatterns\More\EAV\Attribute;
 use DesignPatterns\More\EAV\Entity;
 use DesignPatterns\More\EAV\Value;
+use PHPUnit\Framework\TestCase;
 
-class EAVTest extends \PHPUnit_Framework_TestCase
+class EAVTest extends TestCase
 {
-    public function testCanAddAttributeToEntity()
+    public function testCanAddAttributeToEntity(): void
     {
         $colorAttribute = new Attribute('color');
         $colorSilver = new Value($colorAttribute, 'silver');

@@ -13,8 +13,6 @@ Examples
 -  a form class instance handles all its form elements like a single
    instance of the form, when ``render()`` is called, it subsequently
    runs through all its child elements and calls ``render()`` on them
--  ``Zend_Config``: a tree of configuration options, each one is a
-   ``Zend_Config`` object itself
 
 UML Diagram
 -----------
@@ -26,11 +24,11 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
-RenderableInterface.php
+Renderable.php
 
-.. literalinclude:: RenderableInterface.php
+.. literalinclude:: Renderable.php
    :language: php
    :linenos:
 
@@ -61,5 +59,5 @@ Tests/CompositeTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/Composite
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Structural/Composite
 .. __: http://en.wikipedia.org/wiki/Composite_pattern

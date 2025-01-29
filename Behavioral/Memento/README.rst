@@ -52,7 +52,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
 Memento.php
 
@@ -81,5 +81,5 @@ Tests/MementoTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/Memento
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Behavioral/Memento
 .. __: http://en.wikipedia.org/wiki/Memento_pattern

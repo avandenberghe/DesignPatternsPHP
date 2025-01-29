@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../Creational/Singleton/README.rst:8
 msgid "Purpose"
-msgstr "Proposito"
+msgstr "Propósito"
 
 #: ../../Creational/Singleton/README.rst:10
 msgid ""
@@ -47,11 +47,9 @@ msgstr "Conexión a la base de datos"
 
 #: ../../Creational/Singleton/README.rst:17
 msgid ""
-"Logger (may also be a Multiton if there are many log files for several "
-"purposes)"
+"Logger"
 msgstr ""
-"Logger ( también podría ser un Multiton si hay varios ficheros de log para "
-"diferentes propósitos )"
+"Logger"
 
 #: ../../Creational/Singleton/README.rst:19
 msgid "Lock file for the application (there is only one in the filesystem ...)"
@@ -68,17 +66,9 @@ msgid "Code"
 msgstr "Código"
 
 #: ../../Creational/Singleton/README.rst:32
-msgid "You can also find these code on `GitHub`_"
-msgstr "Puedes ver este código en `GitHub`_"
-
-#: ../../Creational/Singleton/README.rst:34
-msgid "Singleton.php"
-msgstr "Singleton.php"
+msgid "You can also find this code on `GitHub`_"
+msgstr "Puedes encontrar este código en `GitHub`_"
 
 #: ../../Creational/Singleton/README.rst:41
 msgid "Test"
 msgstr "Test"
-
-#: ../../Creational/Singleton/README.rst:43
-msgid "Tests/SingletonTest.php"
-msgstr "Tests/SingletonTest.php"

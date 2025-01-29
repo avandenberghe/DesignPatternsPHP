@@ -1,19 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\ServiceLocator\Tests;
 
 use DesignPatterns\More\ServiceLocator\LogService;
 use DesignPatterns\More\ServiceLocator\ServiceLocator;
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 
 class ServiceLocatorTest extends TestCase
 {
-    /**
-     * @var ServiceLocator
-     */
-    private $serviceLocator;
+    private ServiceLocator $serviceLocator;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->serviceLocator = new ServiceLocator();
     }
@@ -31,6 +30,6 @@ class ServiceLocatorTest extends TestCase
         $this->serviceLocator->addClass(LogService::class, []);
         $logger = $this->serviceLocator->get(LogService::class);
 
-        $this->assertInstanceOf('DesignPatterns\More\ServiceLocator\LogService', $logger);
+        $this->assertInstanceOf(LogService::class, $logger);
     }
 }

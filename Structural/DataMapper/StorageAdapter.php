@@ -1,22 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\DataMapper;
 
 class StorageAdapter
 {
-    /**
-     * @var array
-     */
-    private $data = [];
-
-    public function __construct(array $data)
+    public function __construct(private array $data)
     {
-        $this->data = $data;
     }
 
     /**
-     * @param int $id
-     *
      * @return array|null
      */
     public function find(int $id)

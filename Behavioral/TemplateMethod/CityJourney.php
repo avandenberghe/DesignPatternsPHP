@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\TemplateMethod;
 
 class CityJourney extends Journey
@@ -9,7 +11,7 @@ class CityJourney extends Journey
         return "Eat, drink, take photos and sleep";
     }
 
-    protected function buyGift(): string
+    protected function buyGift(): ?string
     {
         return "Buy a gift";
     }

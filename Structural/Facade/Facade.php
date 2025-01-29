@@ -1,27 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\Facade;
 
 class Facade
 {
-    /**
-     * @var OsInterface
-     */
-    private $os;
-
-    /**
-     * @var BiosInterface
-     */
-    private $bios;
-
-    /**
-     * @param BiosInterface $bios
-     * @param OsInterface   $os
-     */
-    public function __construct(BiosInterface $bios, OsInterface $os)
+    public function __construct(private Bios $bios, private OperatingSystem $os)
     {
-        $this->bios = $bios;
-        $this->os = $os;
     }
 
     public function turnOn()

@@ -1,19 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\DataMapper;
 
 class User
 {
-    /**
-     * @var string
-     */
-    private $username;
-
-    /**
-     * @var string
-     */
-    private $email;
-
     public static function fromState(array $state): User
     {
         // validate state before accessing keys!
@@ -24,26 +16,16 @@ class User
         );
     }
 
-    public function __construct(string $username, string $email)
+    public function __construct(private string $username, private string $email)
     {
-        // validate parameters before setting them!
-
-        $this->username = $username;
-        $this->email = $email;
     }
 
-    /**
-     * @return string
-     */
-    public function getUsername()
+    public function getUsername(): string
     {
         return $this->username;
     }
 
-    /**
-     * @return string
-     */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }

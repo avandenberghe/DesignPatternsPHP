@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\TemplateMethod;
 
 abstract class Journey
@@ -7,7 +9,7 @@ abstract class Journey
     /**
      * @var string[]
      */
-    private $thingsToDo = [];
+    private array $thingsToDo = [];
 
     /**
      * This is the public service provided by this class and its subclasses.
@@ -37,10 +39,8 @@ abstract class Journey
     /**
      * This method is also part of the algorithm but it is optional.
      * You can override it only if you need to
-     *
-     * @return null|string
      */
-    protected function buyGift()
+    protected function buyGift(): ?string
     {
         return null;
     }
@@ -58,7 +58,7 @@ abstract class Journey
     /**
      * @return string[]
      */
-    public function getThingsToDo(): array
+    final public function getThingsToDo(): array
     {
         return $this->thingsToDo;
     }

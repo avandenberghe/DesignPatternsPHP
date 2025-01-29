@@ -1,12 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Strategy\Tests;
 
+use DesignPatterns\Behavioral\Strategy\Context;
 use DesignPatterns\Behavioral\Strategy\DateComparator;
 use DesignPatterns\Behavioral\Strategy\IdComparator;
-use DesignPatterns\Behavioral\Strategy\ObjectCollection;
+use PHPUnit\Framework\TestCase;
 
-class StrategyTest extends \PHPUnit_Framework_TestCase
+class StrategyTest extends TestCase
 {
     public function provideIntegers()
     {
@@ -22,7 +25,7 @@ class StrategyTest extends \PHPUnit_Framework_TestCase
         ];
     }
 
-    public function providateDates()
+    public function provideDates()
     {
         return [
             [
@@ -44,27 +47,25 @@ class StrategyTest extends \PHPUnit_Framework_TestCase
      */
     public function testIdComparator($collection, $expected)
     {
-        $obj = new ObjectCollection($collection);
-        $obj->setComparator(new IdComparator());
-        $elements = $obj->sort();
+        $obj = new Context(new IdComparator());
+        $elements = $obj->executeStrategy($collection);
 
         $firstElement = array_shift($elements);
-        $this->assertEquals($expected, $firstElement);
+        $this->assertSame($expected, $firstElement);
     }
 
     /**
-     * @dataProvider providateDates
+     * @dataProvider provideDates
      *
      * @param array $collection
      * @param array $expected
      */
     public function testDateComparator($collection, $expected)
     {
-        $obj = new ObjectCollection($collection);
-        $obj->setComparator(new DateComparator());
-        $elements = $obj->sort();
+        $obj = new Context(new DateComparator());
+        $elements = $obj->executeStrategy($collection);
 
         $firstElement = array_shift($elements);
-        $this->assertEquals($expected, $firstElement);
+        $this->assertSame($expected, $firstElement);
     }
 }

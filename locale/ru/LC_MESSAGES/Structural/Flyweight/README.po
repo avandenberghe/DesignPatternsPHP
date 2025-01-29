@@ -42,33 +42,17 @@ msgstr ""
 
 #: ../../Structural/Flyweight/README.rst:12
 msgid "UML Diagram"
-msgstr "UML Диаграмма"
+msgstr "Диаграмма UML"
 
 #: ../../Structural/Flyweight/README.rst:19
 msgid "Code"
 msgstr "Код"
 
 #: ../../Structural/Flyweight/README.rst:21
-msgid "You can also find these code on `GitHub`_"
+msgid "You can also find this code on `GitHub`_"
 msgstr "Вы можете найти этот код на `GitHub`_"
-
-#: ../../Structural/Flyweight/README.rst:23
-msgid "FlyweightInterface.php"
-msgstr "FlyweightInterface.php"
-
-#: ../../Structural/Flyweight/README.rst:29
-msgid "CharacterFlyweight.php"
-msgstr "CharacterFlyweight.php"
-
-#: ../../Structural/Flyweight/README.rst:35
-msgid "FlyweightFactory.php"
-msgstr "FlyweightFactory.php"
 
 #: ../../Structural/Flyweight/README.rst:42
 msgid "Test"
 msgstr "Тест"
-
-#: ../../Structural/Flyweight/README.rst:44
-msgid "Tests/FlyweightTest.php"
-msgstr "Tests/FlyweightTest.php"
 

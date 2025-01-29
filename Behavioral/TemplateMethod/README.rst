@@ -31,7 +31,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
 Journey.php
 
@@ -60,5 +60,5 @@ Tests/JourneyTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/TemplateMethod
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Behavioral/TemplateMethod
 .. __: http://en.wikipedia.org/wiki/Template_method_pattern

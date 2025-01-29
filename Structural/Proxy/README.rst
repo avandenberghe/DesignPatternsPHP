@@ -23,22 +23,34 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
-Record.php
+BankAccount.php
 
-.. literalinclude:: Record.php
+.. literalinclude:: BankAccount.php
    :language: php
    :linenos:
 
-RecordProxy.php
+HeavyBankAccount.php
 
-.. literalinclude:: RecordProxy.php
+.. literalinclude:: HeavyBankAccount.php
+   :language: php
+   :linenos:
+
+BankAccountProxy.php
+
+.. literalinclude:: BankAccountProxy.php
    :language: php
    :linenos:
 
 Test
 ----
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/Proxy
+ProxyTest.php
+
+.. literalinclude:: Tests/ProxyTest.php
+   :language: php
+   :linenos:
+
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Structural/Proxy
 .. __: http://en.wikipedia.org/wiki/Proxy_pattern

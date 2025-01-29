@@ -1,3 +1,7 @@
+.. meta::
+   :description: a collection of creational design patterns along with implementations in PHP8
+   :keywords: design patterns, php, creational, best practices
+
 `Creational`__
 ==============
 
@@ -14,7 +18,6 @@ this object creation.
    AbstractFactory/README
    Builder/README
    FactoryMethod/README
-   Multiton/README
    Pool/README
    Prototype/README
    SimpleFactory/README

@@ -33,7 +33,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
 User.php
 
@@ -62,5 +62,5 @@ Tests/DataMapperTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/DataMapper
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Structural/DataMapper
 .. __: http://en.wikipedia.org/wiki/Data_mapper_pattern

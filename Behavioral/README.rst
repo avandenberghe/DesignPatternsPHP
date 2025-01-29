@@ -1,3 +1,7 @@
+.. meta::
+   :description: a collection of behavioral design patterns along with implementations in PHP8
+   :keywords: design patterns, php, behavioral, best practices
+
 `Behavioral`__
 ==============
 
@@ -11,6 +15,7 @@ carrying out this communication.
 
    ChainOfResponsibilities/README
    Command/README
+   Interpreter/README
    Iterator/README
    Mediator/README
    Memento/README

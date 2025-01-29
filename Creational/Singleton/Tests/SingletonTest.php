@@ -1,17 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Creational\Singleton\Tests;
 
 use DesignPatterns\Creational\Singleton\Singleton;
+use PHPUnit\Framework\TestCase;
 
-class SingletonTest extends \PHPUnit_Framework_TestCase
+class SingletonTest extends TestCase
 {
     public function testUniqueness()
     {
         $firstCall = Singleton::getInstance();
         $secondCall = Singleton::getInstance();
 
-        $this->assertInstanceOf('DesignPatterns\Creational\Singleton\Singleton', $firstCall);
+        $this->assertInstanceOf(Singleton::class, $firstCall);
         $this->assertSame($firstCall, $secondCall);
     }
 }

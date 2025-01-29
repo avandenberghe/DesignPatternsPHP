@@ -1,17 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Specification;
 
-class NotSpecification implements SpecificationInterface
+class NotSpecification implements Specification
 {
-    /**
-     * @var SpecificationInterface
-     */
-    private $specification;
-
-    public function __construct(SpecificationInterface $specification)
+    public function __construct(private Specification $specification)
     {
-        $this->specification = $specification;
     }
 
     public function isSatisfiedBy(Item $item): bool

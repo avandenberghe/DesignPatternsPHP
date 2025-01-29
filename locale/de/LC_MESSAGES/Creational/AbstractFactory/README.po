@@ -23,10 +23,9 @@ msgstr "Zweck"
 
 #: ../../Creational/AbstractFactory/README.rst:7
 msgid ""
-"To create series of related or dependent objects without specifying their "
-"concrete classes. Usually the created classes all implement the same "
-"interface. The client of the abstract factory does not care about how these "
-"objects are created, he just knows how they go together."
+"To create series of related or dependent objects without specifying their concrete classes. Usually "
+"the created classes all implement the same interface. The client of the abstract factory does not "
+"care about how these objects are created, it just knows how they go together."
 msgstr ""
 "Um eine Serie von verwandten oder abhängigen Objekten zu erzeugen, ohne "
 "deren konkrete Klassen spezifizieren zu müssen. Im Normalfall "
@@ -43,53 +42,9 @@ msgid "Code"
 msgstr "Code"
 
 #: ../../Creational/AbstractFactory/README.rst:22
-msgid "You can also find these code on `GitHub`_"
+msgid "You can also find this code on `GitHub`_"
 msgstr "Du findest den Code auch auf `GitHub`_"
-
-#: ../../Creational/AbstractFactory/README.rst:24
-msgid "AbstractFactory.php"
-msgstr "AbstractFactory.php"
-
-#: ../../Creational/AbstractFactory/README.rst:30
-msgid "JsonFactory.php"
-msgstr "JsonFactory.php"
-
-#: ../../Creational/AbstractFactory/README.rst:36
-msgid "HtmlFactory.php"
-msgstr "HtmlFactory.php"
-
-#: ../../Creational/AbstractFactory/README.rst:42
-msgid "MediaInterface.php"
-msgstr "MediaInterface.php"
-
-#: ../../Creational/AbstractFactory/README.rst:48
-msgid "Picture.php"
-msgstr "Picture.php"
-
-#: ../../Creational/AbstractFactory/README.rst:54
-msgid "Text.php"
-msgstr "Text.php"
-
-#: ../../Creational/AbstractFactory/README.rst:60
-msgid "Json/Picture.php"
-msgstr "Json/Picture.php"
-
-#: ../../Creational/AbstractFactory/README.rst:66
-msgid "Json/Text.php"
-msgstr "Json/Text.php"
-
-#: ../../Creational/AbstractFactory/README.rst:72
-msgid "Html/Picture.php"
-msgstr "Html/Picture.php"
-
-#: ../../Creational/AbstractFactory/README.rst:78
-msgid "Html/Text.php"
-msgstr "Html/Text.php"
 
 #: ../../Creational/AbstractFactory/README.rst:85
 msgid "Test"
 msgstr "Теst"
-
-#: ../../Creational/AbstractFactory/README.rst:87
-msgid "Tests/AbstractFactoryTest.php"
-msgstr "Tests/AbstractFactoryTest.php"

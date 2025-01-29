@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\TemplateMethod;
 
 class BeachJourney extends Journey

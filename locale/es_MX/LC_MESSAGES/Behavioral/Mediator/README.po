@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../Behavioral/Mediator/README.rst:11
 msgid ""
-"All components (called Colleague) are only coupled to the MediatorInterface "
+"All components (called Colleague) are only coupled to the Mediator interface "
 "and it is a good thing because in OOP, one good friend is better than many. "
 "This is the key-feature of this pattern."
 msgstr ""
@@ -55,7 +55,7 @@ msgid "Code"
 msgstr "Código"
 
 #: ../../Behavioral/Mediator/README.rst:25
-msgid "You can also find these code on `GitHub`_"
+msgid "You can also find this code on `GitHub`_"
 msgstr "Puedes encontrar este código también en `GitHub`_"
 
 #: ../../Behavioral/Mediator/README.rst:63

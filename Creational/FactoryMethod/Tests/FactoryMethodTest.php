@@ -1,51 +1,30 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Creational\FactoryMethod\Tests;
 
-use DesignPatterns\Creational\FactoryMethod\FactoryMethod;
-use DesignPatterns\Creational\FactoryMethod\GermanFactory;
-use DesignPatterns\Creational\FactoryMethod\ItalianFactory;
+use DesignPatterns\Creational\FactoryMethod\FileLogger;
+use DesignPatterns\Creational\FactoryMethod\FileLoggerFactory;
+use DesignPatterns\Creational\FactoryMethod\StdoutLogger;
+use DesignPatterns\Creational\FactoryMethod\StdoutLoggerFactory;
+use PHPUnit\Framework\TestCase;
 
-class FactoryMethodTest extends \PHPUnit_Framework_TestCase
+class FactoryMethodTest extends TestCase
 {
-    public function testCanCreateCheapVehicleInGermany()
+    public function testCanCreateStdoutLogging()
     {
-        $factory = new GermanFactory();
-        $result = $factory->create(FactoryMethod::CHEAP);
+        $loggerFactory = new StdoutLoggerFactory();
+        $logger = $loggerFactory->createLogger();
 
-        $this->assertInstanceOf('DesignPatterns\Creational\FactoryMethod\Bicycle', $result);
+        $this->assertInstanceOf(StdoutLogger::class, $logger);
     }
 
-    public function testCanCreateFastVehicleInGermany()
+    public function testCanCreateFileLogging()
     {
-        $factory = new GermanFactory();
-        $result = $factory->create(FactoryMethod::FAST);
+        $loggerFactory = new FileLoggerFactory(sys_get_temp_dir());
+        $logger = $loggerFactory->createLogger();
 
-        $this->assertInstanceOf('DesignPatterns\Creational\FactoryMethod\CarMercedes', $result);
-    }
-
-    public function testCanCreateCheapVehicleInItaly()
-    {
-        $factory = new ItalianFactory();
-        $result = $factory->create(FactoryMethod::CHEAP);
-
-        $this->assertInstanceOf('DesignPatterns\Creational\FactoryMethod\Bicycle', $result);
-    }
-
-    public function testCanCreateFastVehicleInItaly()
-    {
-        $factory = new ItalianFactory();
-        $result = $factory->create(FactoryMethod::FAST);
-
-        $this->assertInstanceOf('DesignPatterns\Creational\FactoryMethod\CarFerrari', $result);
-    }
-
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage spaceship is not a valid vehicle
-     */
-    public function testUnknownType()
-    {
-        (new ItalianFactory())->create('spaceship');
+        $this->assertInstanceOf(FileLogger::class, $logger);
     }
 }

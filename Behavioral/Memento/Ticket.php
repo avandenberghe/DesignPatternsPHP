@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Memento;
 
 /**
@@ -7,10 +9,7 @@ namespace DesignPatterns\Behavioral\Memento;
  */
 class Ticket
 {
-    /**
-     * @var State
-     */
-    private $currentState;
+    private State $currentState;
 
     public function __construct()
     {

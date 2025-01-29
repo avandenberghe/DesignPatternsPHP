@@ -1,11 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Observer\Tests;
 
 use DesignPatterns\Behavioral\Observer\User;
 use DesignPatterns\Behavioral\Observer\UserObserver;
+use PHPUnit\Framework\TestCase;
 
-class ObserverTest extends \PHPUnit_Framework_TestCase
+class ObserverTest extends TestCase
 {
     public function testChangeInUserLeadsToUserObserverBeingNotified()
     {

@@ -1,27 +1,24 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\EAV;
 
-class Entity
+use SplObjectStorage;
+
+class Entity implements \Stringable
 {
     /**
-     * @var \SplObjectStorage
+     * @var SplObjectStorage<Value,Value>
      */
     private $values;
 
     /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @param string $name
      * @param Value[] $values
      */
-    public function __construct(string $name, $values)
+    public function __construct(private string $name, array $values)
     {
-        $this->values = new \SplObjectStorage();
-        $this->name = $name;
+        $this->values = new SplObjectStorage();
 
         foreach ($values as $value) {
             $this->values->attach($value);

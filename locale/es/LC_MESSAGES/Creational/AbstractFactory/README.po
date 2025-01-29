@@ -14,23 +14,23 @@ msgstr ""
 
 #: ../../Creational/AbstractFactory/README.rst:2
 msgid "`Abstract Factory`__"
-msgstr "`Factoria Abstracta`__"
+msgstr "`Factoría Abstracta`__"
 
 #: ../../Creational/AbstractFactory/README.rst:5
 msgid "Purpose"
-msgstr "Proposito"
+msgstr "Propósito"
 
 #: ../../Creational/AbstractFactory/README.rst:7
 msgid ""
 "To create series of related or dependent objects without specifying their "
 "concrete classes. Usually the created classes all implement the same "
 "interface. The client of the abstract factory does not care about how these "
-"objects are created, he just knows how they go together."
+"objects are created, it just knows how they go together."
 msgstr ""
 "Para crear una serie de objetos relacionados o dependientes sin especificar "
-"a que clase concreta pertenecen. Normalmente las clases creadas implementan "
+"a qué clase concreta pertenecen. Normalmente las clases creadas implementan "
 "las mismas interfaces. El cliente de la factoría abstracta no necesita "
-"preocupase por como estos objetos son creados, el solo sabe que tiene que "
+"preocuparse por cómo estos objetos son creados, él solo sabe qué tiene que "
 "hacer con ellos."
 
 #: ../../Creational/AbstractFactory/README.rst:13
@@ -42,53 +42,9 @@ msgid "Code"
 msgstr "Código"
 
 #: ../../Creational/AbstractFactory/README.rst:22
-msgid "You can also find these code on `GitHub`_"
+msgid "You can also find this code on `GitHub`_"
 msgstr "Puedes encontrar el código en `GitHub`_"
-
-#: ../../Creational/AbstractFactory/README.rst:24
-msgid "AbstractFactory.php"
-msgstr "AbstractFactory.php"
-
-#: ../../Creational/AbstractFactory/README.rst:30
-msgid "JsonFactory.php"
-msgstr "JsonFactory.php"
-
-#: ../../Creational/AbstractFactory/README.rst:36
-msgid "HtmlFactory.php"
-msgstr "HtmlFactory.php"
-
-#: ../../Creational/AbstractFactory/README.rst:42
-msgid "MediaInterface.php"
-msgstr "MediaInterface.php"
-
-#: ../../Creational/AbstractFactory/README.rst:48
-msgid "Picture.php"
-msgstr "Picture.php"
-
-#: ../../Creational/AbstractFactory/README.rst:54
-msgid "Text.php"
-msgstr "Text.php"
-
-#: ../../Creational/AbstractFactory/README.rst:60
-msgid "Json/Picture.php"
-msgstr "Json/Picture.php"
-
-#: ../../Creational/AbstractFactory/README.rst:66
-msgid "Json/Text.php"
-msgstr "Json/Text.php"
-
-#: ../../Creational/AbstractFactory/README.rst:72
-msgid "Html/Picture.php"
-msgstr "Html/Picture.php"
-
-#: ../../Creational/AbstractFactory/README.rst:78
-msgid "Html/Text.php"
-msgstr "Html/Text.php"
 
 #: ../../Creational/AbstractFactory/README.rst:85
 msgid "Test"
 msgstr "Test"
-
-#: ../../Creational/AbstractFactory/README.rst:87
-msgid "Tests/AbstractFactoryTest.php"
-msgstr "Tests/AbstractFactoryTest.php"

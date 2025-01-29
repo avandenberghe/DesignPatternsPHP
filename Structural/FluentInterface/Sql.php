@@ -1,23 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\FluentInterface;
 
-class Sql
+class Sql implements \Stringable
 {
-    /**
-     * @var array
-     */
-    private $fields = [];
-
-    /**
-     * @var array
-     */
-    private $from = [];
-
-    /**
-     * @var array
-     */
-    private $where = [];
+    private array $fields = [];
+    private array $from = [];
+    private array $where = [];
 
     public function select(array $fields): Sql
     {
@@ -28,7 +19,7 @@ class Sql
 
     public function from(string $table, string $alias): Sql
     {
-        $this->from[] = $table.' AS '.$alias;
+        $this->from[] = $table . ' AS ' . $alias;
 
         return $this;
     }

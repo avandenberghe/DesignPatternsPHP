@@ -34,7 +34,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
 WorkerPool.php
 
@@ -57,5 +57,5 @@ Tests/PoolTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Pool
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Creational/Pool
 .. __: http://en.wikipedia.org/wiki/Object_pool_pattern

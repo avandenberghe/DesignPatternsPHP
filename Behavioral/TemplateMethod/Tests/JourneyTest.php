@@ -1,17 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\TemplateMethod\Tests;
 
-use DesignPatterns\Behavioral\TemplateMethod;
+use DesignPatterns\Behavioral\TemplateMethod\BeachJourney;
+use DesignPatterns\Behavioral\TemplateMethod\CityJourney;
+use PHPUnit\Framework\TestCase;
 
-class JourneyTest extends \PHPUnit_Framework_TestCase
+class JourneyTest extends TestCase
 {
     public function testCanGetOnVacationOnTheBeach()
     {
-        $beachJourney = new TemplateMethod\BeachJourney();
+        $beachJourney = new BeachJourney();
         $beachJourney->takeATrip();
 
-        $this->assertEquals(
+        $this->assertSame(
             ['Buy a flight ticket', 'Taking the plane', 'Swimming and sun-bathing', 'Taking the plane'],
             $beachJourney->getThingsToDo()
         );
@@ -19,10 +23,10 @@ class JourneyTest extends \PHPUnit_Framework_TestCase
 
     public function testCanGetOnAJourneyToACity()
     {
-        $beachJourney = new TemplateMethod\CityJourney();
-        $beachJourney->takeATrip();
+        $cityJourney = new CityJourney();
+        $cityJourney->takeATrip();
 
-        $this->assertEquals(
+        $this->assertSame(
             [
                 'Buy a flight ticket',
                 'Taking the plane',
@@ -30,7 +34,7 @@ class JourneyTest extends \PHPUnit_Framework_TestCase
                 'Buy a gift',
                 'Taking the plane'
             ],
-            $beachJourney->getThingsToDo()
+            $cityJourney->getThingsToDo()
         );
     }
 }

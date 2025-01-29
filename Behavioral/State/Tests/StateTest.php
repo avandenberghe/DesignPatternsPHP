@@ -1,33 +1,45 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\State\Tests;
 
-use DesignPatterns\Behavioral\State\OrderRepository;
+use DesignPatterns\Behavioral\State\ContextOrder;
+use PHPUnit\Framework\TestCase;
 
-class StateTest extends \PHPUnit_Framework_TestCase
+class StateTest extends TestCase
 {
-    public function testCanShipCreatedOrder()
+    public function testIsCreatedWithStateCreated(): void
     {
-        $order = (new OrderRepository())->findById(1);
-        $order->shipOrder();
+        $orderContext = ContextOrder::create();
 
-        $this->assertEquals('shipping', $order->getStatus());
+        $this->assertSame('created', $orderContext->toString());
     }
 
-    public function testCanCompleteShippedOrder()
+    public function testCanProceedToStateShipped(): void
     {
-        $order = (new OrderRepository())->findById(2);
-        $order->completeOrder();
+        $contextOrder = ContextOrder::create();
+        $contextOrder->proceedToNext();
 
-        $this->assertEquals('completed', $order->getStatus());
+        $this->assertSame('shipped', $contextOrder->toString());
     }
 
-    /**
-     * @expectedException \Exception
-     */
-    public function testThrowsExceptionWhenTryingToCompleteCreatedOrder()
+    public function testCanProceedToStateDone(): void
     {
-        $order = (new OrderRepository())->findById(1);
-        $order->completeOrder();
+        $contextOrder = ContextOrder::create();
+        $contextOrder->proceedToNext();
+        $contextOrder->proceedToNext();
+
+        $this->assertSame('done', $contextOrder->toString());
+    }
+
+    public function testStateDoneIsTheLastPossibleState(): void
+    {
+        $contextOrder = ContextOrder::create();
+        $contextOrder->proceedToNext();
+        $contextOrder->proceedToNext();
+        $contextOrder->proceedToNext();
+
+        $this->assertSame('done', $contextOrder->toString());
     }
 }

@@ -1,34 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\EAV;
 
-class Attribute
+use SplObjectStorage;
+
+class Attribute implements \Stringable
 {
-    /**
-     * @var \SplObjectStorage
-     */
-    private $values;
+    private SplObjectStorage $values;
 
-    /**
-     * @var string
-     */
-    private $name;
-
-    public function __construct(string $name)
+    public function __construct(private string $name)
     {
-        $this->values = new \SplObjectStorage();
-        $this->name = $name;
+        $this->values = new SplObjectStorage();
     }
 
-    public function addValue(Value $value)
+    public function addValue(Value $value): void
     {
         $this->values->attach($value);
     }
 
-    /**
-     * @return \SplObjectStorage
-     */
-    public function getValues(): \SplObjectStorage
+    public function getValues(): SplObjectStorage
     {
         return $this->values;
     }

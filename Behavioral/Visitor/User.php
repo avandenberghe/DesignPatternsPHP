@@ -1,17 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Visitor;
 
 class User implements Role
 {
-    /**
-     * @var string
-     */
-    private $name;
-
-    public function __construct(string $name)
+    public function __construct(private string $name)
     {
-        $this->name = $name;
     }
 
     public function getName(): string
@@ -19,7 +15,7 @@ class User implements Role
         return sprintf('User %s', $this->name);
     }
 
-    public function accept(RoleVisitorInterface $visitor)
+    public function accept(RoleVisitor $visitor)
     {
         $visitor->visitUser($this);
     }

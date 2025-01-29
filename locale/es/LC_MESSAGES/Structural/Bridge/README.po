@@ -5,7 +5,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-29 12:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: manueldose <metallica_462@hotmail.com>\n"
+"Language: es\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,66 +14,31 @@ msgstr ""
 
 #: ../../Structural/Bridge/README.rst:2
 msgid "`Bridge`__"
-msgstr ""
+msgstr "`Bridge`__"
 
 #: ../../Structural/Bridge/README.rst:5
 msgid "Purpose"
-msgstr ""
+msgstr "Propósito"
 
 #: ../../Structural/Bridge/README.rst:7
 msgid ""
 "Decouple an abstraction from its implementation so that the two can vary "
 "independently."
 msgstr ""
-
-#: ../../Structural/Bridge/README.rst:11
-msgid "Sample:"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:13
-msgid "`Symfony DoctrineBridge <https://github.com/symfony/DoctrineBridge>`__"
-msgstr ""
-
+"Separar la abstracción de su implementación para que las dos puedan variar "
+"independientemente."
 #: ../../Structural/Bridge/README.rst:17
 msgid "UML Diagram"
-msgstr ""
+msgstr "Diagrama UML"
 
 #: ../../Structural/Bridge/README.rst:24
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 #: ../../Structural/Bridge/README.rst:26
-msgid "You can also find these code on `GitHub`_"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:28
-msgid "Workshop.php"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:34
-msgid "Assemble.php"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:40
-msgid "Produce.php"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:46
-msgid "Vehicle.php"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:52
-msgid "Motorcycle.php"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:58
-msgid "Car.php"
-msgstr ""
+msgid "You can also find this code on `GitHub`_"
+msgstr "Puedes encontrar el código en `GitHub`_"
 
 #: ../../Structural/Bridge/README.rst:65
 msgid "Test"
-msgstr ""
-
-#: ../../Structural/Bridge/README.rst:67
-msgid "Tests/BridgeTest.php"
-msgstr ""
+msgstr "Test"

@@ -26,13 +26,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
-
-BookInterface.php
-
-.. literalinclude:: PaperBookInterface.php
-   :language: php
-   :linenos:
+You can also find this code on `GitHub`_
 
 Book.php
 
@@ -40,15 +34,21 @@ Book.php
    :language: php
    :linenos:
 
-EBookAdapter.php
+PaperBook.php
 
-.. literalinclude:: EBookAdapter.php
+.. literalinclude:: PaperBook.php
    :language: php
    :linenos:
 
-EBookInterface.php
+EBook.php
 
-.. literalinclude:: EBookInterface.php
+.. literalinclude:: EBook.php
+   :language: php
+   :linenos:
+
+EBookAdapter.php
+
+.. literalinclude:: EBookAdapter.php
    :language: php
    :linenos:
 
@@ -67,5 +67,5 @@ Tests/AdapterTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/Adapter
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Structural/Adapter
 .. __: http://en.wikipedia.org/wiki/Adapter_pattern

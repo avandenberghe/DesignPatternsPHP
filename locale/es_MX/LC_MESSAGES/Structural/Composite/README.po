@@ -43,14 +43,6 @@ msgstr ""
 "llamado, el objeto recorre todos sus hijos y ejecuta el método ``render()`` "
 "en ellos"
 
-#: ../../Structural/Composite/README.rst:16
-msgid ""
-"``Zend_Config``: a tree of configuration options, each one is a "
-"``Zend_Config`` object itself"
-msgstr ""
-"``Zend_Config``: un árbol de opciones de configuración, cada una es un "
-"objeto ``Zend_Config`` a su vez"
-
 #: ../../Structural/Composite/README.rst:19
 msgid "UML Diagram"
 msgstr "Diagrama UML"
@@ -64,7 +56,7 @@ msgid "Code"
 msgstr "Código"
 
 #: ../../Structural/Composite/README.rst:29
-msgid "You can also find these code on `GitHub`_"
+msgid "You can also find this code on `GitHub`_"
 msgstr "Puedes encontrar este código también en `GitHub`_"
 
 #: ../../Structural/Composite/README.rst:55

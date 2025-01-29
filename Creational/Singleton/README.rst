@@ -14,8 +14,9 @@ Examples
 --------
 
 -  DB Connector
--  Logger (may also be a Multiton if there are many log files for
-   several purposes)
+-  Logger
+-  Config Manager
+-  Threads Handling
 -  Lock file for the application (there is only one in the filesystem
    ...)
 
@@ -29,7 +30,7 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
 Singleton.php
 
@@ -46,5 +47,5 @@ Tests/SingletonTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/Singleton
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Creational/Singleton
 .. __: http://en.wikipedia.org/wiki/Singleton_pattern

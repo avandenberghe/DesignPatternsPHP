@@ -1,13 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Command\Tests;
 
 use DesignPatterns\Behavioral\Command\AddMessageDateCommand;
 use DesignPatterns\Behavioral\Command\HelloCommand;
 use DesignPatterns\Behavioral\Command\Invoker;
 use DesignPatterns\Behavioral\Command\Receiver;
+use PHPUnit\Framework\TestCase;
 
-class UndoableCommandTest extends \PHPUnit_Framework_TestCase
+class UndoableCommandTest extends TestCase
 {
     public function testInvocation()
     {
@@ -16,17 +19,17 @@ class UndoableCommandTest extends \PHPUnit_Framework_TestCase
 
         $invoker->setCommand(new HelloCommand($receiver));
         $invoker->run();
-        $this->assertEquals($receiver->getOutput(), 'Hello World');
+        $this->assertSame('Hello World', $receiver->getOutput());
 
         $messageDateCommand = new AddMessageDateCommand($receiver);
         $messageDateCommand->execute();
 
         $invoker->run();
-        $this->assertEquals($receiver->getOutput(), "Hello World\nHello World [".date('Y-m-d').']');
+        $this->assertSame("Hello World\nHello World [" . date('Y-m-d') . ']', $receiver->getOutput());
 
         $messageDateCommand->undo();
 
         $invoker->run();
-        $this->assertEquals($receiver->getOutput(), "Hello World\nHello World [".date('Y-m-d')."]\nHello World");
+        $this->assertSame("Hello World\nHello World [" . date('Y-m-d') . "]\nHello World", $receiver->getOutput());
     }
 }

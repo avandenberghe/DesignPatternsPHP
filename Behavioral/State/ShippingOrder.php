@@ -1,35 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\State;
 
-class ShippingOrder implements Order
+class ShippingOrder implements StateOrder
 {
-    /**
-     * @var array
-     */
-    private $details;
-
-    /**
-     * @param array $details
-     */
-    public function __construct(array $details)
+    public function proceedToNext(ContextOrder $context): void
     {
-        $this->details = $details;
+        $context->setState(new OrderDone());
     }
 
-    public function shipOrder()
+    public function toString(): string
     {
-        throw new \Exception('Can not ship the order which status is shipping!');
-    }
-
-    public function completeOrder()
-    {
-        $this->details['status'] = 'completed';
-        $this->details['updatedTime'] = time();
-    }
-
-    public function getStatus(): string
-    {
-        return $this->details['status'];
+        return 'shipped';
     }
 }

@@ -1,29 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\EAV;
 
-class Value
+class Value implements \Stringable
 {
-    /**
-     * @var Attribute
-     */
-    private $attribute;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    public function __construct(Attribute $attribute, string $name)
+    public function __construct(private Attribute $attribute, private string $name)
     {
-        $this->name = $name;
-        $this->attribute = $attribute;
-
         $attribute->addValue($this);
     }
 
     public function __toString(): string
     {
-        return sprintf('%s: %s', $this->attribute, $this->name);
+        return sprintf('%s: %s', (string) $this->attribute, $this->name);
     }
 }

@@ -1,27 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Creational\Prototype;
 
 abstract class BookPrototype
 {
-    /**
-     * @var string
-     */
-    protected $title;
-
-    /**
-     * @var string
-     */
-    protected $category;
+    protected string $title;
+    protected string $category;
 
     abstract public function __clone();
 
-    public function getTitle(): string
+    final public function getTitle(): string
     {
         return $this->title;
     }
 
-    public function setTitle($title)
+    final public function setTitle(string $title): void
     {
         $this->title = $title;
     }

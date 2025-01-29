@@ -1,35 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\State;
 
-class CreateOrder implements Order
+class CreateOrder implements StateOrder
 {
-    /**
-     * @var array
-     */
-    private $details;
-
-    /**
-     * @param array $details
-     */
-    public function __construct(array $details)
+    public function proceedToNext(ContextOrder $context): void
     {
-        $this->details = $details;
+        $context->setState(new ShippingOrder());
     }
 
-    public function shipOrder()
+    public function toString(): string
     {
-        $this->details['status'] = 'shipping';
-        $this->details['updatedTime'] = time();
-    }
-
-    public function completeOrder()
-    {
-        throw new \Exception('Can not complete the order which status is created');
-    }
-
-    public function getStatus(): string
-    {
-        return $this->details['status'];
+        return 'created';
     }
 }

@@ -18,23 +18,17 @@ UML Diagram
 Code
 ----
 
-You can also find these code on `GitHub`_
+You can also find this code on `GitHub`_
 
-OrderRepository.php
+ContextOrder.php
 
-.. literalinclude:: OrderRepository.php
+.. literalinclude:: ContextOrder.php
    :language: php
    :linenos:
 
-Order.php
+StateOrder.php
 
-.. literalinclude:: Order.php
-   :language: php
-   :linenos:
-
-ShippingOrder.php
-
-.. literalinclude:: ShippingOrder.php
+.. literalinclude:: StateOrder.php
    :language: php
    :linenos:
 
@@ -44,8 +38,27 @@ CreateOrder.php
    :language: php
    :linenos:
 
+ShippingOrder.php
+
+.. literalinclude:: ShippingOrder.php
+   :language: php
+   :linenos:
+
+OrderDone.php
+
+.. literalinclude:: OrderDone.php
+   :language: php
+   :linenos:
+
 Test
 ----
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/State
+Tests/StateTest.php
+
+.. literalinclude:: Tests/StateTest.php
+   :language: php
+   :linenos:
+
+
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Behavioral/State
 .. __: http://en.wikipedia.org/wiki/State_pattern

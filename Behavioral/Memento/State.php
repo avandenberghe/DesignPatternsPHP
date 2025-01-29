@@ -1,32 +1,30 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Memento;
 
-class State
-{
-    const STATE_CREATED = 'created';
-    const STATE_OPENED = 'opened';
-    const STATE_ASSIGNED = 'assigned';
-    const STATE_CLOSED = 'closed';
+use InvalidArgumentException;
 
-    /**
-     * @var string
-     */
-    private $state;
+class State implements \Stringable
+{
+    public const STATE_CREATED = 'created';
+    public const STATE_OPENED = 'opened';
+    public const STATE_ASSIGNED = 'assigned';
+    public const STATE_CLOSED = 'closed';
+
+    private string $state;
 
     /**
      * @var string[]
      */
-    private static $validStates = [
+    private static array $validStates = [
         self::STATE_CREATED,
         self::STATE_OPENED,
         self::STATE_ASSIGNED,
         self::STATE_CLOSED,
     ];
 
-    /**
-     * @param string $state
-     */
     public function __construct(string $state)
     {
         self::ensureIsValidState($state);
@@ -37,7 +35,7 @@ class State
     private static function ensureIsValidState(string $state)
     {
         if (!in_array($state, self::$validStates)) {
-            throw new \InvalidArgumentException('Invalid state given');
+            throw new InvalidArgumentException('Invalid state given');
         }
     }
 
